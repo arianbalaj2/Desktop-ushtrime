@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  
+}
+
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(216, 231, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 300px;
+    width: 100%;
+    height: 70px;
+    background-color:rgb(216, 231, 216);
+   
+}
+
+
+nav ul{
+    margin: auto;
+    width: 80%;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start ;
+}
+
+nav ul a{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    
+} 
+nav ul li{
+    width: 110px;
+    height: 30px;
+    text-align: center;
+}
+nav ul li :hover{
+    padding: 7px;
+    background-color: beige;
+    transform: rotate(360deg);
+    border-radius: 10px 10px;
+
+}
+/*Forma-html*/
+main{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.maincontainer{
+    width: 40%;
+    text-align: center;
+    background-color: #000000;
+    opacity: 0.7;
+
+}
+
+.content{
+    margin-top: 30%;
+    font-family:'Roboto Slab', serif;
+    color: white;
+}
+.content h1{
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+.maincontainer-1{
+    width: 60%;
+    border: 1px solid tomato;
+    background-color: #f3ca20;
+    opacity: 0.8;
+}
+
+/*Forma*/
+
+form{
+    color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 190px;
+    font-weight: bold;
+    overflow-y: hidden;
+
+}
+    form input{
+    padding: 10px 0 5px 0;
+    border:none;
+    background-color: #f3ca20;
+    color: rgb(175, 2, 2);
+}
+input:focus{
+    outline: none;
+
+}
+
+
+form label{
+    padding:15px 0px 3px 0px;
+}
+#gender {
+    padding-top: 10 px 0px 8px  0px;
+}
+hr {
+    background-color: rgb(46, 44, 44);
+    height: 4px;
+    border: none;
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    }
+    
+        @keyframes zoom {
+        from {transform:scaleX(50%);
+        }
+        to {transform:scaleX(100%);
+        }
+    }
+button{
+    width: 100px;
+    height: 25px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 160px;
+    background-color: #f3ca20;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+.hr{
+    width: 100px;
+    margin-left: 160px;
+
+}
+section{
+    margin-top: 15px;
+}
+section p{
+    margin-bottom: 10px;
+}
+
+/*------------------------Galeria Css per galeri mirpo class jan jo te duhura----------------------*/
+.eksploro{
+    width: 90%;
+    background-color: #dde8ed;
+    margin: 0% auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,310px);
+    grid-template-rows: repeat(50,300px);
+    grid-gap: 5px;
+    justify-content:center;
+    
+
+}
+body{
+    background-color: #e1d2bc !important;
+}
+.eksploro img{
+    width: 260px;
+    height: 160px;
+    margin-top: 10px;
+    margin-bottom: 29px;
+    display: grid;
+}
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
+
+.eks1 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.7s;
+}
+.eks1:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 3px 6px;
+    border-radius: 16px 0px 4px 0px ;
+    opacity: 1;
+}
+.eks2 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks2:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+
+.eks3 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks3:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+
+
+.eks4 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks4:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks5 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks5:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks6 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks6:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks7 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks7:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks8 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks8:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks9 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks9:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks10 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks10:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks11 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks11:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+
+.eks12 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks12:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks13 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks13:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks14 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks14:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}
+.eks15 span{
+    margin-left: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.eks15:hover span{
+    margin-left: 0%;
+    background-color: #b4d1e2;
+    padding: 5px 8px;
+    border-radius: 10px 8px;
+    opacity: 1;
+}

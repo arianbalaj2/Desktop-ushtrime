@@ -1,0 +1,254 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    border-bottom: 5px solid border;
+    
+  
+}
+
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(216, 231, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 300px;
+    width: 100%;
+    height: 70px;
+    background-image: url(../images/Contact/black-carbon-.jpg);
+    background-size: cover;;
+   
+}
+
+
+nav ul{
+    margin: auto;
+    width: 80%;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start ;
+}
+
+nav ul a{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    text-transform: uppercase;
+    
+} 
+nav ul li{
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    
+}
+nav ul li :hover{
+    padding: 7px;
+    background-color: beige;
+    transform: rotate(360deg);
+    border-radius: 10px 10px;
+
+}
+/*main contact*/
+main {
+    background-image: url(../images/Contact/white.jpg);
+    background-size: cover;
+
+}
+.container{
+    width: 80%;
+    height: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 300px) ;
+    justify-content: center;
+    gap: 10px;
+}
+.contact{
+    border: 3px solid rgb(0, 0, 0);    
+    width: 70%;
+    margin-top: 30px;
+    height: 100px;
+}
+.contact h1{
+    margin-top: 30px 0 0 50%;
+    
+
+}
+h1{
+     
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-1{
+    margin-top: 30px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.contact-1 h1{
+margin-left: 50px;
+margin-bottom: 20px;
+font-size: 26px;
+}
+.contact-1 span{
+margin-left: 1px;
+font-size: 16px;
+}
+.contact-1 img{
+margin-left: 50px;
+margin-top: 12px;
+}
+/*contact2*/
+.contact-2{
+    padding: 10px;
+ border: 3px dashed rgb(0, 0, 0);
+ height: 200px;
+}
+.contact-2 h1{
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+
+.contact-2 span{
+    margin-left: 5px;
+    font-size: 20px;
+    }
+.contact-2 img{ 
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.contact-2 button{
+    margin: 20px;
+    margin-left: 50px;
+    width: 70px;
+    height: 3pc;
+    border: 3px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(12, 11, 11);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+
+}
+button:focus{
+    outline: none;
+}
+
+/*contact3*/
+.contact-3{
+    margin-top: 50px;
+ border: 3px solid rgb(0, 0, 0);
+ height: 200px;
+}
+
+.contact-3 h1{
+    font-size:x-large;
+
+}
+
+.contact-3 span{
+    margin-left: 1px;
+    font-size: 20px;
+    }
+.contact-3 img{ 
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.contact-3 button{
+    margin: 20px;
+    margin-left: 50px;
+    width: 70px;
+    height: 3pc;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(216, 201, 182);
+
+}
+/*contact4*/
+.contact-4{
+ border: 3px solid rgb(0, 0, 0);
+ height: 450px;
+ grid-column: 1/span 2;
+ grid-row: 2/span 4;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+
+}
+form span{
+    margin: 10px 0px;
+}
+form input, textarea{
+    padding: 10px;
+    margin: 5px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 75%;
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    animation: input 2.4s ease-in-out; 
+    margin-left: 20px;
+}
+@keyframes input {
+    from {
+        transform: scale(0);
+        border-radius:0px;
+    }
+    to {
+        transform: scale(100%);
+        border-radius: 50px;
+    }
+    
+}
+form input,textarea{
+    border-radius: 50px;
+}
+form label{
+    margin: 10px 0 15px 15px; 
+    
+}
+textarea:focus{
+    outline: none;
+}
+input:focus
+{
+    border: 0px;
+outline: none;
+}
+form textarea{
+    overflow: hidden;
+}
