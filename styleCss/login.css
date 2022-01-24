@@ -33,11 +33,11 @@ nav{
     margin-bottom: 300px;
     width: 100%;
     height: 70px;
-    background-color:rgb(216, 231, 216);
-   
+    background-image: url(../images/header\ back.jpeg);
+    border-radius: 0% 0% 40% 40%;
+    background-size: cover;
+
 }
-
-
 nav ul{
     margin: auto;
     width: 80%;
@@ -82,9 +82,13 @@ main{
     text-align: center;
     background-color: #000000;
     opacity: 0.7;
-
 }
-
+.maincontainer img{
+    margin-top: 15px;
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+}
 .content{
     margin-top: 30%;
     font-family:'Roboto Slab', serif;
@@ -97,9 +101,17 @@ main{
 }
 .maincontainer-1{
     width: 60%;
-    border: 1px solid tomato;
     background-color: #f3ca20;
     opacity: 0.8;
+   ;
+    
+}
+.maincontainer-1 h1{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-transform: italic;
+font-weight: normal;
+margin: 70px 0 0 70px;
 }
 
 /*Forma*/
@@ -109,7 +121,7 @@ form{
     width: 400px;
     display: flex;
     flex-direction: column;
-    margin: 100px 190px;
+    margin: 40px 190px;
     font-weight: bold;
     overflow-y: hidden;
 
@@ -171,7 +183,7 @@ section p{
     margin-bottom: 10px;
 }
 
-/*------------------------Galeria Css per galeri mirpo class jan jo te duhura----------------------*/
+/*------------------------Galeria Css per galeri mirpo class jan te ngaterruara me exploro---------------------*/
 .eksploro{
     width: 90%;
     background-color: #dde8ed;
