@@ -80,7 +80,9 @@ main{
 .maincontainer{
     width: 40%;
     text-align: center;
-    background-color: #000000;
+    background-image: url("../images/HD_1080p_5241854\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0.7;
 }
 .maincontainer img{
@@ -186,19 +188,19 @@ section p{
 /*------------------------Galeria Css per galeri mirpo class jan te ngaterruara me exploro---------------------*/
 .eksploro{
     width: 90%;
+    height: 100%;
     background-color: #dde8ed;
     margin: 0% auto;
 
     display: grid;
     grid-template-columns: repeat(4,310px);
-    grid-template-rows: repeat(50,300px);
+    grid-template-rows: repeat(auto,300px);
     grid-gap: 5px;
     justify-content:center;
     
 
 }
 body{
-    background-color: #e1d2bc !important;
 }
 .eksploro img{
     width: 260px;

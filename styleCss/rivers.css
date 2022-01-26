@@ -1,0 +1,77 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    border-bottom: 5px solid border;
+    
+  
+}
+
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(216, 231, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 300px;
+    width: 100%;
+    height: 70px;
+    background-image: url(../images/Contact/download.jfif);
+    background-size: cover;
+    opacity: 1;
+   
+}
+
+
+nav ul{
+    margin: auto;
+    width: 80%;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start ;
+}
+
+nav ul a{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    
+} 
+nav ul li{
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    
+}
+nav ul li :hover{
+    padding: 7px;
+    background-color: beige;
+    transform: rotate(360deg);
+    border-radius: 10px 10px;
+
+}
