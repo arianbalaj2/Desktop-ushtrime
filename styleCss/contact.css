@@ -12,13 +12,7 @@ body{
 header{
     width: 100%;
     height: 70px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    border-bottom: 5px solid border;
-    
-  
+   
 }
 
 .nav-bar{
@@ -235,7 +229,7 @@ form input, textarea{
     width: 75%;
     background: transparent;
     border: none;
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid white;
     animation: input 2.4s ease-in-out; 
     margin-left: 20px;
 }
@@ -246,7 +240,6 @@ form input, textarea{
     }
     to {
         transform: scale(100%);
-        border-radius: 50px;
     }
     
 }
@@ -274,7 +267,6 @@ input::placeholder{
 textarea::placeholder{
     color: white;
 }
-
 
 
 /*
@@ -374,3 +366,272 @@ hr{
     margin:0% auto;
     border-radius: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    *{
+        overflow-x: hidden;
+    }
+    header{
+        position: relative;
+        min-width: 370px;
+        max-width: 590px !important;
+    }
+    nav ul{
+        margin: auto;
+        width: 80%;
+        justify-content:flex-start;
+        align-items:center;
+    }
+    nav{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    nav ul a{
+        font-family: 'Roboto Slab', serif;
+        text-decoration: none;
+        font-size: 10px
+        ;
+        color: black;
+        text-transform: uppercase;
+        
+    } 
+    nav ul li{
+        width: 50px;
+        margin: 0 4px;
+    }
+
+
+
+
+
+
+
+.container{
+    min-width: 370px;
+    max-width: 610px;
+    height: 1300px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: repeat(auto, 150px);
+    grid-template-columns: repeat(1, auto) ;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+.contact{
+    width: 70%;
+    margin-top: 30px;
+    height: 100px;
+}
+.contact h1{
+    margin-top: 30px 0 0 50%;
+    font-size: 22px;    
+
+}
+
+
+.contact-1{
+    margin-top: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 310px;
+}
+
+.contact-1 h1{
+margin-left: 50px;
+margin-bottom: 20px;
+font-size: 17px;
+}
+
+/*contact2*/
+.contact-2{
+    padding: 10px;
+ border: 1px dashed rgb(255, 255, 255);
+ height: 320px;
+ 
+}
+.contact-2 h1{
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 17px;
+
+}
+
+.contact-2 span{
+    margin-left: 5px;
+    font-size: 14px;
+    }
+
+
+
+/*contact3*/
+.contact-3{
+    margin-top: 10px;
+ border: 1px solid rgb(255, 255, 255);
+ height: 200px;
+ width: 100%;
+}
+
+.contact-3 h1{
+    font-size:17px;
+}
+.contact-3 span{
+    margin-left: 1px;
+    font-size: 14px;
+    }
+
+.contact-3 button{
+    margin: 20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 30px;
+}
+/*contact4*/
+.contact-4{
+ border: 1px solid rgb(255, 255, 255);
+ height: 450px;
+}
+
+form span{
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.contact-4 h1{
+    font-size: 17px;
+}
+
+    footer{
+        overflow-x:hidden !important ;
+        width: 590px;        
+        height: auto;
+    }
+    .footer-1,
+    .footer-2,
+    .footer-3{
+        width: 18%;
+        height: 200px;
+        margin: 10px 5px;
+    }
+    
+    .footer-2 img{
+      width: 14px;
+        height: 174px;
+    }
+  .footer-1 img{
+        margin: 50px 30px  ;
+        width: 90px;
+        height: 23px;
+    }
+    
+    
+    .footer-2 img{
+        margin: 54px 2px 0px 0px  ;
+        width: 22px;
+        height:22px;
+    }
+    
+    .footer-title{
+        font-size: 17px;
+    }
+    
+    
+}
+
+@media (min-width: 600px) and (max-width: 991.98px)  {
+    *{
+        overflow-x: hidden !important;
+    }
+    header{
+        position: relative;
+        width: 100%;
+    }
+    nav ul{
+        margin: auto;
+        width: 80%;
+        justify-content:flex-start;
+        align-items:center;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    nav ul a{
+        font-family: 'Roboto Slab', serif;
+        text-decoration: none;
+        font-size: 18px
+        ;
+        color: black;
+        text-transform: uppercase;
+        
+    } 
+    nav ul li{
+        width: 100px;
+        margin: 0 4px;
+    }
+
+
+
+
+    .container{
+        overflow:hidden !important ;
+        height: 1300px;
+        margin: 0 auto;
+        grid-template-rows: repeat(8, 150px);
+        grid-template-columns: repeat(2, auto) ;
+    }
+ 
+    .contact-1{
+        margin-top: -150px;
+        border: 1px solid rgb(255, 255, 255);
+        height: 310px;
+    }
+    
+    /*contact2*/
+    .contact-2{
+      margin-top: -150px;
+    }
+ 
+   
+
+    footer{
+        overflow-x:hidden !important ;
+        min-width: 700px;        
+        height: auto;
+    }
+    .footer-1,
+    .footer-2,
+    .footer-3{
+        width: 18%;
+        height: 200px;
+        margin: 10px 5px;
+    }
+    
+    .footer-2 img{
+      width: 14px;
+        height: 174px;
+    }
+  .footer-1 img{
+        margin: 50px 30px  ;
+        width: 90px;
+        height: 23px;
+    }
+    
+    
+    .footer-2 img{
+        margin: 54px 2px 0px 0px  ;
+        width: 22px;
+        height:22px;
+    }
+    
+    .footer-title{
+        font-size: 17px;
+    }
+    
+    
+}   
+
+

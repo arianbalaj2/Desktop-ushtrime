@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template:
+            "header header header header"
+            ". main main ." 
+            "footer footer footer footer" 
+            
+            ;
+        }
+        header{
+            grid-area: header;
+            background-color: turquoise;
+            height: 300px;
+        }
+        main{
+            height: auto;
+            grid-area: main;
+            background-color: violet;
+         
+       }
+       .class2{
+           grid-area: class2;
+           background-color: brown;
+           width: 100px;
+           height: auto;
+       }
+       .class{
+           width: 100px;
+           height: auto;
+           background-color: rgb(3, 125, 66);
+           display: grid;
+            grid-template:
+            "class para para"
+            "class class2 class2"
+            "class .       class2"
+            ;
+       }
+       
+       .para{
+           grid-area: para;
+           width: 100px;
+           height: auto;
+           background-color: rgb(17, 15, 15);
+       }
+        footer{
+            height: 300px;
+            grid-area: footer;
+            background-color: blue;            
+        }
+    </style>
+</head>
+<body>
+    <header>13</header>
+    <main>
+        <div class="class">
+           
+       
+                     <p class="para">Lorem ipsum dolor sit amet, consect</p>
+       
+                    <div class="class2">asdada</div>
+        </div>
+    </main>
+    <footer>4</footer>
+    
+</body>
+</html>

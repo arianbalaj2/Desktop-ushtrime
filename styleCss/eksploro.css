@@ -6,41 +6,22 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 header{
     width: 100%;
     height: 70px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
   
 }
-
-.nav-bar{
-    width: 100%;
-    height: 70px;
-    background-color:rgb(216, 231, 216);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
 nav{
+    width: 100vw;    
+    min-width: auto;
+    height: 70px;
     position: fixed;
     z-index: 1;
-    margin-bottom: 300px;
-    width: 100%;
-    height: 70px;
-    background-image: url(../images/header\ back.jpeg);
+    background-image: url(../images/index/header\ back.jpeg);
     border-radius: 0% 0% 40% 40%;
     background-size: cover;
 }
-
-
-
-
 nav ul{
     margin: auto;
     width: 80%;
@@ -63,7 +44,9 @@ nav ul a{
 nav ul li{
     width: 110px;
     height: 30px;
+    align-items: center;
     text-align: center;
+    margin: 30px auto;
 }
 nav ul li :hover{
     padding: 7px;
@@ -72,20 +55,14 @@ nav ul li :hover{
     border-radius: 10px 10px;
 
 }
-
-
-
-
-
 /*Main e eksploro*/
 main{
-    width: 90%;
+    width: 100%;
     background-color:#f2f2f2;
-    margin: 0% auto;
 
     display: grid;
-    grid-template-columns: repeat(1,945px);
-    grid-template-rows: repeat(8,945px);
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(8,1345px);
     grid-gap: 5px;
     justify-content:center;
     gap: 10px;
@@ -97,6 +74,11 @@ main{
 span{
     display: flex;
 }
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .container span{
     margin-left: -100px;
     font-size: 40px;
@@ -106,19 +88,21 @@ span{
     transition: all 0.3s;
 }
 .container:hover span{
-    margin-left: 0%;
+    margin-left: 10%;
     border-radius: 8px;
     opacity: 1;
 }
 .container p{
+    width: 90%;
+    margin: auto;
     padding:0% 10px 0px 10px;
-    margin-top: 40px;
+    margin-top: 40px 0px 20px 200px;
 }
 .container img{
-    width: 945px;
-    height: 500px;
+    width: 80%;
+    height: 900px !important;
+    margin-left: 100px;
 }
-
 /*
 Footer
 
@@ -127,7 +111,7 @@ footer{
     background-color: black;
     width: 100%;
     height: auto;
-    margin-top:  30px;;
+    margin-top:  0px;;
 }
 .footer-content{
 
@@ -216,3 +200,151 @@ hr{
     margin:0% auto;
     border-radius: 40px;
 }
+
+
+/*media*/
+@media only screen and (max-width: 600px) {
+    *{
+        overflow-x: hidden !important;
+    }
+    header{
+        position: relative;
+        min-width: 500px;
+        max-width: 600px;
+    }
+    nav ul{
+        margin: auto;
+        width: 80%;
+        justify-content:flex-start;
+        align-items:center;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    nav ul a{
+        font-family: 'Roboto Slab', serif;
+        text-decoration: none;
+        font-size: 10px
+        ;
+        color: black;
+        text-transform: uppercase;
+        
+    } 
+    nav ul li{
+        width: 50px;
+        margin: 0 4px;
+    }
+    /*Main e eksploro*/
+    main{
+        min-width: 500px;
+        background-color:#f2f2f2;
+    
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(8,945px);
+        justify-content:start;
+        gap: 2px;
+    }    
+    .container span{
+        margin-left:0px;
+        font-size: 24px;
+        opacity: 1;
+        transition:hidden ;
+    }
+    
+    .container p{
+        width: 70%;
+        padding:0% 10px 0px 10px;
+        margin: 10px 0px 10px 30px;
+    }
+    .container img{
+        width: 300px;
+        height: 300px !important;
+        margin-left: 30px;
+
+    }
+    /*
+    Footer
+    
+    */
+    footer{
+        overflow-x:hidden !important ;
+        width: 600px;        
+        height: auto;
+    }
+    .footer-1,
+    .footer-2,
+    .footer-3{
+        width: 18%;
+        height: 200px;
+        margin: 10px 5px;
+    }
+    
+    .footer-2 img{
+      width: 14px;
+        height: 174px;
+    }
+  .footer-1 img{
+        margin: 50px 30px  ;
+        width: 90px;
+        height: 23px;
+    }
+    
+    
+    .footer-2 img{
+        margin: 54px 2px 0px 0px  ;
+        width: 22px;
+        height:22px;
+    }
+    
+    .footer-title{
+        font-size: 17px;
+    }
+    
+    
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    /*Main e eksploro*/
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(8,1000px);
+    gap: 0px;
+}
+.container span{
+    margin-left:100px;
+    font-size: 20px;
+    opacity: 1;
+}
+.container p{
+    width: 90%;
+    padding:0% 10px;
+    font-size: 14px;
+    margin: 10px 0px 20px 100px;
+}
+.container img{
+    width: 600px;
+    height: 300px !important;
+    margin-left: 100px;
+}
+.footer-2 img{
+    width: 35px;
+    height: 35px;
+ 
+    margin: 20px 0px !important;
+    padding: 0px !important;
+  }
+  @media only screen and (min-width: 992px) {
+
+  }
