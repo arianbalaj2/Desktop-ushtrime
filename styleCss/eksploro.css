@@ -62,7 +62,7 @@ main{
 
     display: grid;
     grid-template-columns: repeat(1,100%);
-    grid-template-rows: repeat(8,1345px);
+    grid-template-rows: repeat(8,305px);
     grid-gap: 5px;
     justify-content:center;
     gap: 10px;
@@ -77,6 +77,9 @@ span{
 .container{
     width: 90%;
     margin: 0 auto;
+    height: 500px
+    ;
+
 }
 
 .container span{
@@ -99,9 +102,9 @@ span{
     margin-top: 40px 0px 20px 200px;
 }
 .container img{
-    width: 80%;
+    width: 400px;
     height: 900px !important;
-    margin-left: 100px;
+    margin-left: 400px;
 }
 /*
 Footer
@@ -344,7 +347,4 @@ main{
  
     margin: 20px 0px !important;
     padding: 0px !important;
-  }
-  @media only screen and (min-width: 992px) {
-
   }

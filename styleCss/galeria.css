@@ -498,6 +498,7 @@ hr{
         width: 100px;
         margin: 0 4px;
     }
+    
     .eksploro{
         width: 100% ;
         height: auto;
@@ -514,15 +515,15 @@ hr{
     .eksploro img{
         width: 200px;
         height: 160px;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 29px;
         display: grid;
     }
 
     footer{
         overflow-x:hidden !important ;
-        min-width: 700px;        
-        height: auto;
+        min-width: 00px;        
+        height: 900px;
     }
     .footer-1,
     .footer-2,
