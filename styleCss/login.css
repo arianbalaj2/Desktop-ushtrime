@@ -483,6 +483,12 @@ hr{
     hr {
         height: 2px;
     }
+    button{
+        margin: 0% auto;
+    }
+    button hr{
+        width: 300px;
+    }
     
     footer{
         overflow-x:hidden !important ;

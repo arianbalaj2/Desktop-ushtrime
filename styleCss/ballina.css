@@ -292,7 +292,7 @@ hr{
     .newsection5, .newsection6, .newsection7{
         width: 599px;
         display: grid;
-        grid-template-columns: 150px 200px;
+        grid-template-columns:  1fr;
         grid-template-rows: repeat(1,400px);
         gap: 0px;
         margin: 80px auto;
@@ -386,6 +386,7 @@ hr{
 
     header{
         width: 1200px;
+
         height: 600px;
     } 
     #titulli{

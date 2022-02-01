@@ -506,14 +506,14 @@ hr{
         margin: 0% auto;
     
         display: grid;
-        grid-template-columns: repeat(2,310px);
+        grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(auto,300px);
         gap: 0px;
         justify-content:center;
     }
     
     .eksploro img{
-        width: 200px;
+        width: auto;
         height: 160px;
         margin-top: 0px;
         margin-bottom: 29px;

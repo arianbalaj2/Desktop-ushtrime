@@ -62,7 +62,7 @@ main{
 
     display: grid;
     grid-template-columns: repeat(1,100%);
-    grid-template-rows: repeat(8,305px);
+    grid-template-rows: repeat(8,905px);
     grid-gap: 5px;
     justify-content:center;
     gap: 10px;
@@ -77,8 +77,6 @@ span{
 .container{
     width: 90%;
     margin: 0 auto;
-    height: 500px
-    ;
 
 }
 
@@ -276,14 +274,13 @@ hr{
     footer{
         overflow-x:hidden !important ;
         width: 600px;        
-        height: auto;
     }
     .footer-1,
     .footer-2,
     .footer-3{
         width: 18%;
         height: 200px;
-        margin: 10px 5px;
+        margin: 0px 5px;
     }
     
     .footer-2 img{
@@ -333,12 +330,12 @@ main{
 .container p{
     width: 90%;
     padding:0% 10px;
-    font-size: 14px;
+    font-size: 18px;
     margin: 10px 0px 20px 100px;
 }
 .container img{
-    width: 600px;
-    height: 300px !important;
+    width: 900px;
+    height: 600px !important;
     margin-left: 100px;
 }
 .footer-2 img{
@@ -348,3 +345,4 @@ main{
     margin: 20px 0px !important;
     padding: 0px !important;
   }
+  
